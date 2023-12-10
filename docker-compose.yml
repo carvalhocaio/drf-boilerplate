@@ -1,0 +1,14 @@
+version: '3.9'
+
+services:
+  db:
+    image: postgres:13-alpine
+    ports:
+      - "5432:5432"
+    container_name: drf-boilerplate-database
+    volumes:
+      - ~/apps/postgres:/var/lib/postgresql/data
+    environment:
+      POSTGRES_DB: drf-boilerplate
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
