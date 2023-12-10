@@ -3,6 +3,7 @@
 Um boilerplate para projetos Django focado para API com [Django REST Framework](https://www.django-rest-framework.org/)
 
 ## Ferramentas utilizadas
+
 - python = "3.11.3"
 - django = "4.2"
 - python-decouple = "^3.8"
@@ -21,7 +22,9 @@ Um boilerplate para projetos Django focado para API com [Django REST Framework](
 - faker = "^20.1.0"
 
 ## Banco de dados
-Caso seja necessário a criação de um banco de dados para a aplicação, há um arquivo `docker-compose.yml` que cria um container de postgres. Para rodar o container basta executar:
+
+Caso seja necessário a criação de um banco de dados para a aplicação, há um arquivo `docker-compose.yml` que cria um
+container de postgres. Para rodar o container basta executar:
 
 ```
 docker-compose up --build
