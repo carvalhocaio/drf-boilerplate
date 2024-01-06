@@ -34,5 +34,5 @@ pytest --cov
 ### drf-spectacular generate schema
 
 ```
-python manage.py spectacular --file schama.yml
+python manage.py spectacular --file schema.yml
 ```
