@@ -70,11 +70,10 @@ PASSWORD_VALIDATIONS = [
     "NumericPasswordValidator",
 ]
 
-AUTH_PASSWORD_VALIDATORS = list()
-for validation in PASSWORD_VALIDATIONS:
-    AUTH_PASSWORD_VALIDATORS.append(
-        {"NAME": f"django.contrib.auth.password_validation.{validation}"}
-    )
+AUTH_PASSWORD_VALIDATORS = [
+    {"NAME": f"django.contrib.auth.password_validation.{validation}"}
+    for validation in PASSWORD_VALIDATIONS
+]
 
 # Internationalization
 # https://docs.djangoproject.com/en/5.0/topics/i18n/
